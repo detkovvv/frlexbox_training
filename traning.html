@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>FlexboX</title>
+	<link rel="stylesheet" href="css/main.css">
+	<style>
+		.flexbox {
+			display: flex;
+			width: 800px;
+		}
+		.flexbox_item {
+			flex: 1;
+
+			/*
+			initial (0 1 auto)
+			auto (1 1 auto)
+			none (0 0 auto
+			2 (2 1 0) 
+			30px (1 1 30px)
+			2 30px (2 1 30px)
+			2 3 30px (2 3 30px)
+			*/
+
+			/*
+			flex-shrink: 1;
+			flex-grow: 1 ;
+			flex-basis: 220px; 
+			*/
+		}
+		.flexbox_item:nth-child(2) {
+			flex-grow: 1;
+		}
+	</style>
+</head>
+<body>
+	<div class="flexbox">
+		<div class="flexbox_item">A</div>
+		<div class="flexbox_item">B B</div>
+		<div class="flexbox_item">C C C</div>
+		<div class="flexbox_item">D D D D</div>
+		<div class="flexbox_item">E E E E E</div>
+	</div>
+</body>
+</html>
